@@ -1,11 +1,6 @@
-#1
-result = ["heads","tails","tails","heads","tails","heads","heads","tails","tails","tails"]
-
-num_heads=0
-for i in result:
-    if i=='heads':
-        num_heads+=1
-    else:
+#2
+for i in range(1,11):
+    if i%2==0:
         continue
-
-print(f'No of heads is : {num_heads}')
+    else:
+        print(i**2)
