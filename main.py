@@ -1,17 +1,10 @@
-#ex 1 part b
-india=['mumbai','banglore','chennai','delhi']
-pakistan=['lahore','karachi','islamabad']
-bangladesh=['dhaka','khulna','rangpur']
+#exercise 2[sugar level detector]
+sugar_level=int(input('Enter Your sugar level : '))
 
-city1=input('Enter Name of city1 : ')
-city2=input('Enter name of city2 : ')
-
-
-if city1 in india and city2 in india:
-    print(f'{city1} and {city2} are in india' )
-elif city1 in india and city2 in pakistan:
-    print(f'{city1} and {city2} are in pakistan' )
-elif city1 in india and city2 in bangladesh:
-    print(f'{city1} and {city2} are in bangladesh')
+if sugar_level >= 80 and sugar_level <= 100:
+    print('Your Sugar is normal')
+elif sugar_level<80:
+    print('Your Sugar is low')
 else:
-    print(f'{city1} and {city2} are either not in same country or one or both of them are not in any country')
+    print('Your Sugar is high')
+
