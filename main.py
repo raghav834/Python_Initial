@@ -1,10 +1,7 @@
-#exercise 2[sugar level detector]
-sugar_level=int(input('Enter Your sugar level : '))
+#expense
+expenses=[2000,3425,4800,5900,1243]
+total=0
+for expense in expenses:
+    total=total+expense
 
-if sugar_level >= 80 and sugar_level <= 100:
-    print('Your Sugar is normal')
-elif sugar_level<80:
-    print('Your Sugar is low')
-else:
-    print('Your Sugar is high')
-
+print(total)
